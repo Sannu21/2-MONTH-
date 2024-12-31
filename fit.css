@@ -1,0 +1,209 @@
+.head1 {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+
+.navbar {
+  width: 10%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.navbar li {
+  text-align: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 25px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  transition: background-color 0.6s ease;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px
+  }
+}
+
+.c1 {
+  height: 330px;
+  width: 100%;
+  display: flex;
+}
+
+.c11 {
+  width: 33.33%;
+}
+
+.c2 {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+}
+
+video {
+  width: 66.66%;
+  height: 500px;
+}
+
+.ours {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  background-color: black;
+  color: aliceblue;
+  font-style: italic;
+}
+
+.ours p {
+  padding: 40px;
+  font-size: 25px;
+  word-spacing: 15px;
+}
+
+.oura {
+  height: 600px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+}
+
+.oll1 {
+  width: 50%;
+  margin: 30px 60px 30px 60px;
+  padding: 30px;
+  word-spacing: 5px;
+
+}
+
+.or2 {
+  width: 50%;
+  margin: 30px 60px 30px 60px;
+  padding: 30px;
+  word-spacing: 5px;
+
+}
+
+.oll {
+  display: flex;
+  width: 100%;
+  height: 533px;
+}
+
+.why {
+  height: 400px;
+  width: 100%;
+}
+
+.whyp {
+  text-align: center;
+  height: 200px;
+  display: flex;
+  margin: 15px;
+}
+
+.whyp1 {
+  width: 50%;
+}
+
+.fea {
+  height: 200px;
+  width: 100%;
+  display: flex;
+}
+
+.fea img {
+  margin: 0 auto;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.fea img :hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.hdeals {
+  height: 300px;
+  width: 25%;
+  margin: auto;
+}
+
+footer {
+  height: 425px;
+  width: 100%;
+  color: antiquewhite;
+  background-color: black;
+}
+
+.social-icons {
+  height: 50px;
+  display: flex;
+  gap: 20px;
+  /* Adjust the gap between icons */
+  justify-content: center;
+}
+
+.social-icons a {
+  color: red;
+  /* Icon color */
+  font-size: 27px;
+  /* Icon size */
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #fbfdfb;
+  /* Color on hover */
+}

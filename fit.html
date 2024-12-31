@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X | Fitness</title>
+    <link rel="stylesheet" href="fit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-----------------            header       ---------------------------->
+    <div class="head1">
+        <img src="thegym-logo.jpg" style="margin-left: 9%;">
+        <div>
+            <nav style="display: flex; justify-content: center;">
+                <ul class="navbar">
+                    <li><a href="fit.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-----------------            header       ---------------------------->
+
+    <!-----------------             slide show             ----------------->
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="slider1.jpg" style="width:100%; height: 600px;">
+        </div>
+        <div class="mySlides fade">
+            <img src="slider2.jpg" style="width:100%;height: 600px;">
+        </div>
+        <div class="mySlides fade">
+            <img src="slider3.jpg" style="width:100%; height: 600px;">
+        </div>
+    </div>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <!-----------------             slide show             ----------------->
+
+    <!------------           welcome               ----------------->
+    <header style="text-align: center;">
+        <h1 style="color: red;">Welcome to <u>TheGym</u></h1>
+        <h4>Take care of your body. It's the only place you have to live.</h4>
+    </header>
+    <div class="c1">
+        <div class="c11">
+            <h3 style="text-align: center;">KICK BOXING</h3>
+            <img src="the-gym-kikboxing.jpg" width="100%">
+        </div>
+        <div class="c11">
+            <h3 style="text-align: center;">AEROBCS</h3>
+            <img src="the-gym-aerobic.jpg" width="100%">
+        </div>
+        <div class="c11">
+            <h3 style="text-align: center;">STRENGTH</h3>
+            <img src="the-gym-strength.jpg" width="100%">
+        </div>
+    </div>
+
+    <div class="c2">
+        <img src="thegym-bhangrayour.jpg" width="33.33%">
+        <video controls>
+            <source src="vedio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="c1" stye="margin-top: 5PX;">
+        <div class="c11">
+
+            <img src="the-gym-free-weight.jpg" width="100%">
+            <h3 style="text-align: center;">FREE WEIGHT</h3>
+        </div>
+        <div class="c11">
+
+            <img src="the-gym-power-yoga.jpg" width="100%">
+            <h3 style="text-align: center;">POWER YOGA</h3>
+        </div>
+        <div class="c11">
+
+            <img src="the-gym-zumba.jpg" width="100%">
+            <h3 style="text-align: center;">ZUMBA</h3>
+        </div>
+    </div>
+
+    <!------------           welcome               ----------------->
+
+    <!------------           our story               ----------------->
+    <div class="ours">
+        <div>
+            <h2 style="margin-left: 40px;color: red;">OUR STORY</h2>
+            <p>
+                THE GYM is the brainchild of our founders G.Khatter who believe that healthy
+                lifestyle lead to better quality of life. The main idea is to have our members
+                enjoy their fitness trainings in classy and private settings. As such, it is
+                not surprising that THE GYM is passionately led by a team of highly qualified
+                and experienced fitness instructors and health professionals. Our team's passion
+                is to serve our members with sheer dedication, warm friendliness and joyful helpfulness.
+            </p>
+        </div>
+        <img src="sunny.jpg" width="100%">
+    </div>
+
+    <!------------           our story               ----------------->
+
+    <!------------           hot deals               ----------------->
+    <header style="color: red; text-align: center;">
+        <h1>HOT DEALS</h1>
+    </header>
+    <div style="height: 400px; width: 100%;display: flex;background-color: aquamarine;">
+        <div class="hdeals">
+            <img src="hdfcbank.jpg" width="100%">
+            <p style="text-align: center;text-decoration: underline;">30% OFF ON YEARLY MEMBERSHIP</p>
+        </div>
+        <div class="hdeals">
+            <img src="icicibank.jpg" width="100%">
+            <p style="text-align: center;text-decoration: underline;">30% OFF ON YEARLY MEMBERSHIP</p>
+        </div>
+        <div class="hdeals">
+            <img src="nandos.jpg" width="100%">
+            <p style="text-align: center;text-decoration: underline;">15% OFF ON YEARLY MEMBERSHIP</p>
+        </div>
+    </div>
+
+    <!------------           hot deals               ----------------->
+
+    <!------------           our advantage               ----------------->
+    <div class="oura">
+        <h2 style="color: red; text-align: center;">OUR ADVANTAGE</h2>
+
+        <div class="oll">
+            <div class="oll1">
+                <h3>Qualified trainers</h3>
+                <p>We're sure that one time or another, you've been fascinated
+                    at how a trainer facilitates class and engages learners.
+                    You have also most likely observed some of the best qualities of
+                    a good trainer and already somewhat have an idea of what attributes
+                    make a trainer great at work.
+                </p>
+                <h3>Multiple classes</h3>
+                <p>We provides multiple classes to our clints Zumba, Aerobics,
+                    Kickboxing, Strenght, Power yoga, Free weight.
+                </p>
+                <h3>Men and Women's changing rooms</h3>
+                <p>In our gym we provide seprate Men and women changing room for their
+                    convience. We are highly maintain our dignity to provide seamless experience.
+                </p>
+                <h3>Towels and Lockers</h3>
+                <p>As it is our towels and Lockers both are safe.
+                </p>
+            </div>
+            <div class="or2">
+                <h3>Individual training</h3>
+                <p>A personal trainer is an individual certified to have a varying degree of
+                    knowledge of general fitness involved in exercise prescription and instruction.
+                    They motivate clients by setting goals and providing feedback and accountability to clients.
+                </p>
+                <h3>Hightech gym</h3>
+                <p>Monitoring performance during the one-hour workout, from wearable devices to
+                    projection screens, which help in getting solidity from long slogans on cardio devices,
+                    make use of modern technology to enhance the experience of today's gym exercise.
+                </p>
+                <h3>Free Wi-Fi</h3>
+                <p>We provide free wi-fi for smoothless experience in our gym. We care for our customer
+                    entertainment. Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris
+                    id convallis pretium. Aliquam id odio sit amet mauris.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!------------           our advantage               ----------------->
+
+    <!------------           why the gym               ----------------->
+    <header style="text-align: center;color: red;">
+        <h1>Why<u>The Gym</u></h1>
+    </header>
+    <div class="why">
+        <div class="whyp">
+            <div class="whyp1" style="margin: 10px;">
+                <img src="icon-support.png" style="align-content: center;">
+                <h3>Support</h3>
+                <p style="word-spacing: 2px;">Every member gets a free, personalized Get Started Plan when they join.
+                    Our friendly, professional staff is trained to help you along your fitness journey.
+                </p>
+                <hr style="border: 1px solid black; width: 90%;">
+            </div>
+            <div style="width: 2px; height: 130px; background-color: black;"></div>
+            <div class="whyp1">
+                <img src="icon-tools-training.png" style="align-content: center;">
+                <h3>Tools & Training</h3>
+                <p style="word-spacing: 2px;">Getting to a healthier place is about more than going to the gym.
+                    That's why we offer personal training and classes when you're here, and the right tools
+                    to keep you on track when you're not.</p>
+                <hr style="border: 1px solid black; width: 90%;">
+            </div>
+        </div>
+
+        <div class="whyp">
+            <div class="whyp1" style="margin: 10px;">
+                <img src="icon-convenience.png" style="align-content: center;">
+                <h3>Convenience</h3>
+                <p style="word-spacing: 2px;">With 24/7 access to more than 3,000 locations worldwide,
+                    you're joining the most convenient gym on the planet.</p>
+            </div>
+            <div style="width: 2px; height: 130px; background-color: black;"></div>
+            <div class="whyp1">
+                <img src="icon-community.png" style="align-content: center;">
+                <h3>Community</h3>
+                <p style="word-spacing: 2px;">You're not just joining a gym. You're joining a supportive
+                    community of like-minded people who are here to give you the encouragement you need.</p>
+            </div>
+        </div>
+    </div>
+
+    <!------------           why the gym               ----------------->
+
+    <!------------           members              ----------------->
+    <img src="mem.png" height="400px" width="100%">
+    <!------------           members               ----------------->
+
+    <!------------           featured                 ----------------->
+    <header style="text-align: center;color: red;">
+        <h1>FEATURED ON</h1>
+    </header>
+    <div class="fea">
+        <img src="cnbc.jpg" height="150px" width="200px">
+        <img src="et1.jpg" height="150px" width="200px">
+        <img src="vh2.jpg" height="150px" width="200px">
+        <img src="htcity.jpg" height="150px" width="200px">
+    </div>
+
+    <!------------           featured                  ----------------->
+
+    <!------------           footer                  ----------------->
+    <footer>
+        <p style="color: red; font-size: 30px;text-align: center; padding-top: 20px;">CONTACT US</p>
+        <div style="height: 250px;display: flex;">
+            <div style="margin-left: 15%;">
+                <a href="gmail : imams211098@gmail.com" style="color: aliceblue;">Gmail-
+                    imams211098@gmail.com</a><br><br>
+                <a href="tel:+911234567890" style="color: aliceblue;">Call Us: +91 12345 67890</a><br><br>
+                <a href="tel:+91 8840324236" style="color: aliceblue;">Call Us: +91 8840324236</a>
+                <p>Location- CIDS Building, BHU, Lanka, Varanasi, Uttar pradesh</p>
+
+            </div>
+            <div style="margin-left: 20%;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8367755406623!2d144.
+                95373631532166!3d-37.8172098797515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                1s0x6ad65d43c59fdbf1%3A0x51b28e8e37c02877!2sFlinders+St+Station!5e0!3m2!1sen!2sus!
+                4v1635506402091!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p style="text-align: center;">&copy; 2024 X-Fitness. All Rights Reserved.</p>
+
+
+    </footer>
+
+    <!------------           footer                 ----------------->
+
+
+</body>
+
+</html>
